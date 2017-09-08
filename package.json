@@ -1,0 +1,23 @@
+{
+  "name": "angulardb2",
+  "version": "1.0.0",
+  "description": "Little Angular Example with Db2 REST Service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "db2",
+    "REST"
+  ],
+  "author": "Oliver Draese",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.4",
+    "http": "0.0.0"
+  }
+}

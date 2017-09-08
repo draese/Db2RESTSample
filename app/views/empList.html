@@ -1,0 +1,34 @@
+<!-- Embedded view of the Angular App with the birthday list -->
+<h2>Alle Geburtstage aus der Db2 Sample DB</h2>
+
+<div ng-controller="birthDayListController">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Vorname</th>
+        <th>Nachname</th>
+        <th>Geburtstag</th>
+        <th>Alter</th>
+      </tr>
+    </thead>
+
+    <!-- Show the received data as table rows -->
+    <tbody>
+      <tr ng-repeat="emp in empData">
+        <td>{{emp.firstName}}</td>
+        <td>{{emp.lastName}}</td>
+        <td>{{emp.bDay}}</td>
+        <td>{{emp.age}}</td>
+      </tr>
+    </tbody>
+
+    <!-- Display the average age of all employees in the footer -->
+    <tfoot>
+      <tr>
+        <td colspan="3" class="text-right"><b>Durschnittsalter:</b></td>
+        <td><b>{{avgAge()}}</b></td>
+      </tr>
+    </tfoot>
+
+  </table>
+</div>

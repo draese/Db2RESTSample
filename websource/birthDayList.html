@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<!-- Main Angular web page for birthday list sample -->
+<html ng-app="birthDayList">
+  <head>
+      <title>Olli's Geburtstagsliste</title>
+      <base href="/list" />
+      <link href="/css/bootstrap.css" rel="stylesheet" />
+      <link href="/css/bootstrap-theme.css" rel="stylesheet" />
+  </head>
+  <body>
+      <div class="navbar navbar-inverse">
+          <a class="navbar-brand" href="https://www.db2-aktuell.de">
+            Db2 Aktuell 2017
+          </a>
+      </div>
+
+      <!-- Display partial view here -->
+      <ng-view/>
+  </body>
+  <script src="/js/angular.js"></script>
+  <script src="/js/angular-route.js"></script>
+  <script src="/controller/birthDayList.js"></script>
+  <script src="/controller/birthDayListContoller.js"></script>
+</html>
